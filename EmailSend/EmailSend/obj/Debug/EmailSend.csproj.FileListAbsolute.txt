@@ -18,3 +18,13 @@ D:\EmailSend\EmailSend\obj\Debug\EmailSend.csproj.GenerateResource.cache
 D:\EmailSend\EmailSend\obj\Debug\EmailSend.csproj.CoreCompileInputs.cache
 D:\EmailSend\EmailSend\obj\Debug\EmailSend.exe
 D:\EmailSend\EmailSend\obj\Debug\EmailSend.pdb
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\bin\Debug\EmailSend.exe.config
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\bin\Debug\EmailSend.exe
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\bin\Debug\EmailSend.pdb
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.csprojAssemblyReference.cache
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.Form1.resources
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.Properties.Resources.resources
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.csproj.GenerateResource.cache
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.csproj.CoreCompileInputs.cache
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.exe
+D:\Proiecte\Emails-Send\EmailSend\EmailSend\obj\Debug\EmailSend.pdb

@@ -50,40 +50,37 @@ namespace EmailSend
             progressBar1.Minimum = 0;
             progressBar1.Maximum = lines.Length;
             progressBar1.Step = 1;
-        
+            try
+            {
+                string username = "du4@gmail.com"; //gmailul tau
+                string password = "dru";  //parola contului
+
                 SmtpClient SmtpServer = new SmtpClient();
                 SmtpServer.Host = "smtp.gmail.com";
                 SmtpServer.Port = 587;
-
                 SmtpServer.EnableSsl = true;
                 SmtpServer.DeliveryMethod = SmtpDeliveryMethod.Network;
                 SmtpServer.UseDefaultCredentials = false;
-                string username = "dumitrfgfd84@gmail.com"; //gmailul tau
-                string password = "gdfgfs";  //parola contului
-                SmtpServer.Credentials = new System.Net.NetworkCredential(username, password);
+                 SmtpServer.Credentials = new System.Net.NetworkCredential(username, password);
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress(username);
+                mail.Subject = Subject.Text;
+                mail.Body = Message.Text;
 
                 foreach (string line in lines)
-                {
-                    MailMessage mail = new MailMessage();
-
-                    mail.From = new MailAddress(username);
+                {                 
                     mail.To.Add(line);
-                    mail.Subject = Subject.Text;
-                    mail.Body = Message.Text;
-
-
-                    SmtpServer.Send(mail);
                     progressBar1.PerformStep();
-
-
                  }
+                SmtpServer.Send(mail);
                 progressBar1.Visible = false;
                 MessageBox.Show("mail Send");
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.ToString());
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
      
