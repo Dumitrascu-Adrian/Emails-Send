@@ -50,8 +50,7 @@ namespace EmailSend
             progressBar1.Minimum = 0;
             progressBar1.Maximum = lines.Length;
             progressBar1.Step = 1;
-            try
-            { 
+        
                 SmtpClient SmtpServer = new SmtpClient();
                 SmtpServer.Host = "smtp.gmail.com";
                 SmtpServer.Port = 587;
@@ -59,8 +58,8 @@ namespace EmailSend
                 SmtpServer.EnableSsl = true;
                 SmtpServer.DeliveryMethod = SmtpDeliveryMethod.Network;
                 SmtpServer.UseDefaultCredentials = false;
-                string username = ""; //gmailul tau
-                string password = "";  //parola contului
+                string username = "dumitrfgfd84@gmail.com"; //gmailul tau
+                string password = "gdfgfs";  //parola contului
                 SmtpServer.Credentials = new System.Net.NetworkCredential(username, password);
 
                 foreach (string line in lines)
@@ -80,11 +79,11 @@ namespace EmailSend
                  }
                 progressBar1.Visible = false;
                 MessageBox.Show("mail Send");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //}
         }
 
      

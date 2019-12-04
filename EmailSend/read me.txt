@@ -1,0 +1,1 @@
+Aplicatie care citeste din fisier adresele de mail si le trimite la toate mesajul care se afla in textbox
